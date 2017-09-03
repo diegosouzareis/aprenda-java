@@ -1,0 +1,21 @@
+Rodrigo Sasaki:
+
+Private: A única classe que tem acesso ao atributo é a própria classe que o define, ou seja, se uma classe Pessoa declara um atributo privado chamado nome, somente a classe Pessoa terá acesso a ele.
+
+Default: Tem acesso a um atributo default (identificado pela ausência de modificadores) todas as classes que estiverem no mesmo pacote que a classe que possui o atributo.
+
+Protected: Esse é o que pega mais gente, ele é praticamente igual ao default, com a diferença de que se uma classe (mesmo que esteja fora do pacote) estende da classe com o atributo protected, ela terá acesso a ele. Então o acesso é por pacote e por herança.
+
+Public: Esse é fácil, todos tem acesso :)
+
+André Mazoni:
+
+Modifier    | Class | Package | Subclass | World
+————————————+———————+—————————+——————————+———————
+public      |   ✔   |    ✔    |    ✔     |   ✔
+————————————+———————+—————————+——————————+———————
+protected   |   ✔   |    ✔    |    ✔     |   ✘
+————————————+———————+—————————+——————————+———————
+no modifier |   ✔   |    ✔    |    ✘     |   ✘
+————————————+———————+—————————+——————————+———————
+private     |   ✔   |    ✘    |    ✘     |   ✘
